@@ -28,8 +28,12 @@ const Content = () => {
   const button = <button className="btn1">Purchage UI kit</button>;
   return (
     <div className="container-fluid content">
-      <img src="assets/Cloud.png" alt="" className="cloudimg" />
-      <img src="assets/CloudTop.png" alt="" className="cloudtop" />
+      <img src="assets/Cloud.png" alt="" className="cloudimg img-responsive" />
+      <img
+        src="assets/CloudTop.png"
+        alt=""
+        className="cloudtop img-responsive"
+      />
       <div className="row">
         <div className="col-md-6 contentCol">
           <h1>Introduce Your Product Quickly & Effectively</h1>
@@ -79,7 +83,7 @@ const Content = () => {
           </div>
         </div>
         <div className="col-md-6 firstimg">
-          <img src="assets/1st.png" alt="" />
+          <img src="assets/1st.png" alt="" className="img-responsive" />
         </div>
       </div>
 
@@ -101,9 +105,10 @@ const Content = () => {
           button={button}
         />
       </div>
-      
-      <Footer button={button}/>
-      
+
+      <div className="row contentfooter">
+        <Footer button={button} />
+      </div>
     </div>
   );
 };

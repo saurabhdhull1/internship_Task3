@@ -17,6 +17,7 @@ export const Footer = ({ button }) => {
         </div>
         <p>See, One price. Simple.</p>
         {button}
+        
       </div>
       
       <div className="row footer1">

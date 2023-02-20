@@ -4,11 +4,97 @@
   box-sizing: border-box;
   color: #111b47;
 }
-body{
+body {
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
-body p{
-  color: #6F7CB2;
+body p {
+  color: #6f7cb2;
+}
+body img {
+  z-index: 1;
+}
+img[loading="lazy"] {
+  background-color: #a8a8a8; /* placeholder color */
+  transition: opacity 0.5s ease-out;
 }
 
+img:not([loading="lazy"]) {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+img:not([loading="lazy"]):not([src=""]) {
+  opacity: 1;
+}
+
+/* @media (max-width:768px){
+  body{
+    font-size: 18px;
+  }
+  button{
+    font-size: .8em !important;
+  }
+ 
+} */
+
+@media (max-width: 1300px) {
+  body {
+    font-size: 18px;
+  }
+  button {
+    font-size: 0.8em !important;
+  }
+
+  /* .btn1{
+          font-size: .2em !important;
+        } */
+}
+/* @media screen and (min-resolution: 120dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 1.5),
+       screen and (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 3),
+       screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 2),
+       screen and (min-resolution: 240dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 2.25),
+       screen and (min-resolution: 288dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 2.7) {
+  body {
+    font-size: 16px;
+  }
+  .btn1{
+    font-size: .2em !important;
+  }
+}
+
+@media screen and (min-resolution: 120dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 1.5) and (min-width: 125%) {
+  body {
+    font-size: 18px;
+  }
+  .btn1{
+    font-size: .2em !important;
+  }
+}
+
+@media screen and (min-resolution: 120dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 1.5) and (min-width: 150%) {
+  body {
+    font-size: 20px;
+  }
+  .btn1{
+    font-size: .2em !important;
+  }
+}
+
+@media screen and (min-resolution: 120dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 1.5) and (min-width: 175%) {
+  body {
+    font-size: 22px;
+  }
+  .btn1{
+    font-size: .2em !important;
+  }
+}
+
+@media screen and (min-resolution: 120dpi) and (min-width: 1024px) and (max-width: 1440px) and (min--moz-device-pixel-ratio: 1.5) and (min-width: 200%) {
+  body {
+    font-size: 24px;
+  }
+  .btn1{
+    font-size: .2em !important;
+  }
+} */
